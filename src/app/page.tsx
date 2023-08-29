@@ -1,113 +1,72 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex bg-pentelope-beige text-pentelope-blue max-h-screen flex-col items-center justify-between p-24">
+      <div className="font-bold pb-10 text-center">
+        <div className="py-2 text-7xl underline">Pentelope</div>
+        <div className="py-2 text-6xl">Lightweight Debian Based OS</div>
+      </div>
+
+      <div className="text-2xl font-bold pb-5">
+        Just a (not so short) intro:{' '}
+      </div>
+      <div>
+        The perfect computer operating system has been debated for a long time.
+        But in turn, after decades of improvement and research, we have
+        concluded that there is nothing called the
+        <span className="font-bold">Perfect Operating System</span>. Windows and
+        macOS had been the most prominent OS in the industry until 1991, when
+        Linux arrived, which gave programmers not just a plethora of in-built
+        features but reduced the size of the OS significantly to provide great
+        computational power. Soon, there were numerous Linux distributions, such
+        as FOSS, Red Hat, Debian, etc. Some very niche distributions are Kali
+        and Linux. This paper discusses a Linux distribution built for
+        programmers with a central focus on web development and penetration
+        testing. The motive is to combine the tools required by programmers and
+        penetration testers for the above-mentioned requirements. We have tried
+        to build a lightweight Debian OS for web development and penetration
+        testing called <span className="font-bold">Pentelope</span>. We make it
+        lightweight by removing all the extra components a normal Linux
+        distribution comes with, which act as bloatware, and putting in the
+        required tools such as NodeJS, Git, and a few IDEs such as VS Code to
+        choose from, along with the necessary Web Penetration Testing tools like
+        Metasploit, Nmap and Burp Suite. We explore the computation power it
+        provides and the size of the exported ISO file and compare it with other
+        existing in OS/distributions. We also test how feasible it is to add new
+        tools as necessary.
+      </div>
+
+      <div className="pb-5">
+        <div className="text-2xl font-bold pt-10 py-5">
+          Features of Pentelope
         </div>
+        <ul>
+          <li className="py-2">
+            <span className="font-bold">➦</span> Pentelope focuses on Web
+            Developers and Web Penetration Testers.
+          </li>
+          <li className="py-2">
+            <span className="font-bold">➦</span> It contains all the pre-built
+            tools required to perform the above mentioned tasks such as Visual
+            Studio Code as text editors, Git as version control, NodeJS for web
+            application development, Katoolin, and Burp-suite for web
+            penetration testing.
+          </li>
+          <li className="py-2">
+            <span className="font-bold">➦</span> It was built as a lightweight
+            Operating system in order to be able to run on low-specs machines as
+            well.
+          </li>
+        </ul>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="animate-bounce bg-pentelope-blue px-14 py-2 text-white font-bold rounded-lg">
+        <Link href="https://drive.google.com/file/d/16GhxwJCt5CMdaP2CzgPmMpgleMxnCYMK/view?usp=drive_link">
+          ⬇️ Download ISO
+        </Link>
       </div>
     </main>
-  )
+  );
 }
