@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex bg-pentelope-beige text-pentelope-blue max-h-screen flex-col items-center justify-between p-24">
+    <main className="flex bg-pentelope-beige text-pentelope-blue h-screen flex-col items-center justify-between px-24">
       <div className="font-bold pb-10 text-center">
         <div className="py-2 text-7xl underline">Pentelope</div>
         <div className="py-2 text-6xl">Lightweight Debian Based OS</div>
@@ -62,7 +62,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="animate-bounce bg-pentelope-blue px-14 py-2 text-white font-bold rounded-lg">
+      <div className="animate-bounce bg-pentelope-blue px-14 py-2 mb-10 text-white font-bold rounded-lg">
         <Link href="https://drive.google.com/file/d/16GhxwJCt5CMdaP2CzgPmMpgleMxnCYMK/view?usp=drive_link">
           ⬇️ Download ISO
         </Link>
